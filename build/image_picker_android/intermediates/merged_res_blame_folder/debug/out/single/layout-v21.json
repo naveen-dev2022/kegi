@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/naveen/kegi/build/image_picker_android/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/naveen/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/naveen/kegi/build/image_picker_android/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/naveen/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/naveen/kegi/build/image_picker_android/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/naveen/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/naveen/kegi/build/image_picker_android/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/naveen/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/res/layout-v21/notification_action.xml"
+    }
+]

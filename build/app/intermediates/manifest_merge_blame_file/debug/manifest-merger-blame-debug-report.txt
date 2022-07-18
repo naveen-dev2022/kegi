@@ -1,0 +1,172 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.kegi_sudo"
+4    android:versionCode="4"
+5    android:versionName="1.0.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+9        android:targetSdkVersion="32" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/naveen/kegi/android/app/src/main/AndroidManifest.xml:4:5-67
+14-->/Users/naveen/kegi/android/app/src/main/AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->/Users/naveen/kegi/android/app/src/main/AndroidManifest.xml:5:5-68
+15-->/Users/naveen/kegi/android/app/src/main/AndroidManifest.xml:5:22-65
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->/Users/naveen/kegi/android/app/src/main/AndroidManifest.xml:6:5-77
+16-->/Users/naveen/kegi/android/app/src/main/AndroidManifest.xml:6:22-74
+17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+17-->/Users/naveen/kegi/android/app/src/main/AndroidManifest.xml:7:5-84
+17-->/Users/naveen/kegi/android/app/src/main/AndroidManifest.xml:7:22-82
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->[:location] /Users/naveen/kegi/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+18-->[:location] /Users/naveen/kegi/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Include required permissions for Google Maps API to run. -->
+19-->[:location] /Users/naveen/kegi/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-79
+19-->[:location] /Users/naveen/kegi/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-76
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
+20-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:22-76
+21
+22    <uses-feature
+22-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+23        android:glEsVersion="0x00020000"
+23-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+24        android:required="true" />
+24-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+25
+26    <queries>
+26-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+27
+28        <!-- Needs to be explicitly declared on Android R+ -->
+29        <package android:name="com.google.android.apps.maps" />
+29-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+29-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+30    </queries>
+31
+32    <application
+33        android:name="android.app.Application"
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.8.0] /Users/naveen/.gradle/caches/transforms-2/files-2.1/8e86e615f21ac3758e97e94e18045107/core-1.8.0/AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/ic_launcher"
+37        android:label="kegi_sudo" >
+38       android:requestLegacyExternalStorage="true"
+39        <activity
+40            android:name="com.example.kegi_sudo.MainActivity"
+41            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+42            android:exported="true"
+43            android:hardwareAccelerated="true"
+44            android:launchMode="singleTop"
+45            android:theme="@style/LaunchTheme"
+46            android:windowSoftInputMode="adjustResize" >
+47
+48            <!--
+49                 Specifies an Android theme to apply to this Activity as soon as
+50                 the Android process has started. This theme is visible to the user
+51                 while the Flutter UI initializes. After that, this theme continues
+52                 to determine the Window background behind the Flutter UI.
+53            -->
+54            <meta-data
+55                android:name="io.flutter.embedding.android.NormalTheme"
+56                android:resource="@style/NormalTheme" />
+57
+58            <intent-filter>
+59                <action android:name="android.intent.action.MAIN" />
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+62            </intent-filter>
+63        </activity>
+64        <!--
+65             Don't delete the meta-data below.
+66             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+67        -->
+68        <meta-data
+69            android:name="flutterEmbedding"
+70            android:value="2" />
+71        <meta-data
+72            android:name="com.google.android.geo.API_KEY"
+73            android:value="AIzaSyB8uutjbYX0C_pPM82ipCIyWUQ3cc5NmSg" />
+74
+75        <service
+75-->[:geolocator_android] /Users/naveen/kegi/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-14:56
+76            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+76-->[:geolocator_android] /Users/naveen/kegi/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-77
+77            android:enabled="true"
+77-->[:geolocator_android] /Users/naveen/kegi/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-35
+78            android:exported="false"
+78-->[:geolocator_android] /Users/naveen/kegi/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+79            android:foregroundServiceType="location" />
+79-->[:geolocator_android] /Users/naveen/kegi/build/geolocator_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-53
+80
+81        <provider
+81-->[:image_picker_android] /Users/naveen/kegi/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+82            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+82-->[:image_picker_android] /Users/naveen/kegi/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-82
+83            android:authorities="com.example.kegi_sudo.flutter.image_provider"
+83-->[:image_picker_android] /Users/naveen/kegi/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
+84            android:exported="false"
+84-->[:image_picker_android] /Users/naveen/kegi/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+85            android:grantUriPermissions="true" >
+85-->[:image_picker_android] /Users/naveen/kegi/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+86            <meta-data
+86-->[:image_picker_android] /Users/naveen/kegi/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:75
+87                android:name="android.support.FILE_PROVIDER_PATHS"
+87-->[:image_picker_android] /Users/naveen/kegi/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
+88                android:resource="@xml/flutter_image_picker_file_paths" />
+88-->[:image_picker_android] /Users/naveen/kegi/build/image_picker_android/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-72
+89        </provider>
+90
+91        <service
+91-->[:location] /Users/naveen/kegi/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-15:56
+92            android:name="com.lyokone.location.FlutterLocationService"
+92-->[:location] /Users/naveen/kegi/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-71
+93            android:enabled="true"
+93-->[:location] /Users/naveen/kegi/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-35
+94            android:exported="false"
+94-->[:location] /Users/naveen/kegi/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+95            android:foregroundServiceType="location" />
+95-->[:location] /Users/naveen/kegi/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-53
+96
+97        <uses-library
+97-->[androidx.window:window:1.0.0-beta04] /Users/naveen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+98            android:name="androidx.window.extensions"
+98-->[androidx.window:window:1.0.0-beta04] /Users/naveen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+99            android:required="false" />
+99-->[androidx.window:window:1.0.0-beta04] /Users/naveen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+100        <uses-library
+100-->[androidx.window:window:1.0.0-beta04] /Users/naveen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+101            android:name="androidx.window.sidecar"
+101-->[androidx.window:window:1.0.0-beta04] /Users/naveen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+102            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+102-->[androidx.window:window:1.0.0-beta04] /Users/naveen/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+103        <uses-library
+103-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+104            android:name="org.apache.http.legacy"
+104-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+105            android:required="false" />
+105-->[com.google.android.gms:play-services-maps:18.0.2] /Users/naveen/.gradle/caches/transforms-2/files-2.1/7d064776558e2f29807c8a762199a631/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+106
+107        <activity
+107-->[com.google.android.gms:play-services-base:18.0.1] /Users/naveen/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+108            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+108-->[com.google.android.gms:play-services-base:18.0.1] /Users/naveen/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+109            android:exported="false"
+109-->[com.google.android.gms:play-services-base:18.0.1] /Users/naveen/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+110            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+110-->[com.google.android.gms:play-services-base:18.0.1] /Users/naveen/.gradle/caches/transforms-2/files-2.1/642cc9e2632e586d1058ed231591ead4/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+111
+112        <meta-data
+112-->[com.google.android.gms:play-services-basement:18.0.0] /Users/naveen/.gradle/caches/transforms-2/files-2.1/65c8b9154009d1931a3db50d7627d9e4/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+113            android:name="com.google.android.gms.version"
+113-->[com.google.android.gms:play-services-basement:18.0.0] /Users/naveen/.gradle/caches/transforms-2/files-2.1/65c8b9154009d1931a3db50d7627d9e4/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+114            android:value="@integer/google_play_services_version" />
+114-->[com.google.android.gms:play-services-basement:18.0.0] /Users/naveen/.gradle/caches/transforms-2/files-2.1/65c8b9154009d1931a3db50d7627d9e4/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+115    </application>
+116
+117</manifest>
